@@ -107,7 +107,7 @@ public class ShowActivity extends AppCompatActivity implements Animation.Animati
             /** 开始动画 */
             animation.startNow();
             Message message = Message.obtain();
-            mHandler.sendMessageDelayed(message, 3000);
+            mHandler.sendMessageDelayed(message, 3500);
         }
     };
 
@@ -122,7 +122,7 @@ public class ShowActivity extends AppCompatActivity implements Animation.Animati
                 frameView.setVisibility(View.GONE);
                 ivShow.clearAnimation();
             }
-        }, 1000);
+        }, 1500);
     }
 
     @Override public void onAnimationRepeat(Animation animation) {
