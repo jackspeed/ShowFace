@@ -86,6 +86,7 @@ public class ShowActivity extends AppCompatActivity implements Animation.Animati
             super.handleMessage(msg);
             frameView.setVisibility(View.VISIBLE);
             ivShow.setVisibility(View.VISIBLE);
+
             Log.i("*", "handleMessage开始动画 screenHeight： " + screenHeight + "screenWidth:  " +
                     screenWidth);
             /** 设置位移动画 向右位移150 */
