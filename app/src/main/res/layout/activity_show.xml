@@ -14,18 +14,27 @@
     <FrameLayout
         android:id="@+id/frame_show"
         android:visibility="gone"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-        <com.itheima.roundedimageview.RoundedImageView
-            android:id="@+id/iv_dialog_show"
-            android:src="@mipmap/ic_launcher_round"
-            android:scaleType="fitCenter"
-            app:riv_corner_radius="10dip"
-            app:riv_border_width="1dip"
-            app:riv_border_color="#999999"
-            app:riv_oval="false"
-            android:layout_width="120dp"
-            android:layout_height="120dp"/>
     </FrameLayout>
+
+    <com.itheima.roundedimageview.RoundedImageView
+        android:id="@+id/iv_dialog_show"
+        android:visibility="gone"
+        android:src="@mipmap/male"
+        android:scaleType="fitXY"
+        android:layout_width="80dp"
+        app:riv_corner_radius="8dp"
+        android:layout_height="80dp"/>
+
+    <com.itheima.roundedimageview.RoundedImageView
+        android:id="@+id/iv_result_show"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/male"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        app:riv_corner_radius="8dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"/>
 </RelativeLayout>

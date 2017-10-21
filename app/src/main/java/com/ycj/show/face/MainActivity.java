@@ -12,10 +12,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button tvShow = (Button) findViewById(R.id.tv_start_show);
+        Button tvShow1 = (Button) findViewById(R.id.tv_start_show1);
         tvShow.setOnClickListener(this);
+        tvShow1.setOnClickListener(this);
     }
 
     @Override public void onClick(View v) {
-        startActivity(new Intent(this, ShowActivity.class));
+        switch (v.getId()) {
+            case R.id.tv_start_show:
+                startActivity(new Intent(this, ShowActivity.class));
+                break;
+            case R.id.tv_start_show1:
+                startActivity(new Intent(this, ShowActivity.class));
+                break;
+        }
     }
 }
